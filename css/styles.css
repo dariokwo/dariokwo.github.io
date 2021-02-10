@@ -1,15 +1,38 @@
-section.coming-soon {
+html, body {
+    border: 0;
     margin: 0;
     padding: 0;
+}
+
+section.coming-soon {
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
     min-height: 100vh;
+
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/sambatali.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-    color: #fff;
+section.coming-soon .coming-soon-info {
+    display: block;
+    margin: 5%;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background:rgba(0, 0, 0, 0.5);
+    max-width: 420px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+
+    section.coming-soon .coming-soon-info {
+        opacity: 0.9;
+        margin-top: 60vh;
+    }
 
 }
